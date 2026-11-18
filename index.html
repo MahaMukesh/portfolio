@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maha Mukesh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">Maha Mukesh</a>
+      <button id="menu-btn" aria-label="Open menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-btn" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <img src="https://via.placeholder.com/180" alt="Portrait photo of Maha Mukesh, web developer">
+      <h1>Hi, I'm Maha Mukesh</h1>
+      <p>Aspiring Web Developer | HTML, CSS & JavaScript</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a student learning web development. I love building clean, accessible and responsive websites using HTML, CSS and JavaScript.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GitHub Pages</li><li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web">
+          <img src="https://via.placeholder.com/400x200" alt="Screenshot of portfolio website project">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML, CSS and JavaScript.</p>
+        </article>
+        <article class="project-card" data-category="js">
+          <img src="https://via.placeholder.com/400x200" alt="Screenshot of to-do list app project">
+          <h3>To-Do List App</h3>
+          <p>Interactive app to add, delete and filter tasks using JavaScript.</p>
+        </article>
+        <article class="project-card" data-category="web">
+          <img src="https://via.placeholder.com/400x200" alt="Screenshot of landing page project">
+          <h3>Landing Page</h3>
+          <p>Modern landing page with responsive layout and accessible navigation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Your email">
+        <label for="message">Message:</label>
+        <textarea id="message" required placeholder="Your message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Maha Mukesh. Built with HTML, CSS & JavaScript.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
